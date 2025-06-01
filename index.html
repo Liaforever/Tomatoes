@@ -8,67 +8,73 @@
     <h1>Welcome to the &lt;Tomato&gt; Website!</h1>
     <h2>Fun Facts about Tomatoes!</h2>
     <section>
-    <ul>
-      <li>They belong to the Plantae Kingdom.</li>
-      <li>They belong to the Solanales Order</li>
-      <li>They belong to the Solanaceae Family</li>
-    </ul>
+      <ul>
+        <li>They belong to the Plantae Kingdom.</li>
+        <li>They belong to the Solanales Order.</li>
+        <li>They belong to the Solanaceae Family.</li>
+      </ul>
     </section>
     <section>
       <h2>What to do if you <b>encounter</b> a Tomato</h2>
       <ol>
         <li>Wash it</li>
         <li>Cut it</li>
-        <li><i>Eat</i>it</li>
+        <li><i>Eat</i> it</li>
       </ol>
     </section>
     <section>
       <h2>More:</h2>
       <figure>
         <a href="https://en.wikipedia.org/wiki/Tomato" target="_blank" rel="noopener noreferrer">
-      <img src="Tomato_je.jpg" alt="Tomatoes">
+          <img src="Tomato_je.jpg" alt="Tomatoes">
         </a>
-        <figcaption>><b>Tomatoes</b></figcaption>
+        <figcaption><b>Tomatoes</b></figcaption>
       </figure>
-    <p><a href="https://en.wikipedia.org/wiki/Tomato" target="_blank" rel="noopener noreferrer"><em>More about Tomatoes</em></a></p>
+      <p><a href="https://en.wikipedia.org/wiki/Tomato" target="_blank" rel="noopener noreferrer"><em>More about Tomatoes</em></a></p>
     </section>
     <section>
       <h2>Feedback on your experience <i>Tomatoes</i></h2>
       <form action="example.com">
-        <input type="text" placeholder="2 Yummy yaar" required>
-        <br>
+        <label for="feedback">Your thoughts:</label><br>
+        <input type="text" id="feedback" name="feedback" placeholder="2 Yummy yaar" required>
+        <br><br>
+        
         <p>Assignment</p>
         <p>Upload the image of your favorite tomato</p>
-        <br>
-        <input type="file" required>
-        <br>
+        <input type="file" id="tomatoPic" name="tomatoPic" required>
+        <br><br>
+
         <label>
-        <input type="checkbox" required>
-        I love tomatoes!
-    </label>
-        <br>
-        <label>
-          <input type="checkbox">
-          I HATE TOMATOES!! &quot;DON'T YOU DARE CHECK THIS&quot;
+          <input type="checkbox" name="loveTomatoes" required>
+          I love tomatoes!
         </label>
         <br>
+
+        <label>
+          <input type="checkbox" name="hateTomatoes">
+          I HATE TOMATOES!! "DON'T YOU DARE CHECK THIS"
+        </label>
+        <br>
+
         <p>Do you like tomatoes?</p>
-<label>
-  <input type="radio" id="love-em" name="love-em-meh-idk" value="love"> love em
-</label>
-    <br>    
-<label>
-  <input type="radio" id="meh" name="love-em-meh-idk" value="meh"> meh
-</label>
-<br>
-        <label>
-          <input type="radio" id="idk" name="love-em-meh-idk" value="idk"> idk
+        <label for="love-em">
+          <input type="radio" id="love-em" name="tomatoOpinion" value="love"> love em
+        </label>
+        <br>    
+        <label for="meh">
+          <input type="radio" id="meh" name="tomatoOpinion" value="meh"> meh
         </label>
         <br>
-<button type="submit">Submit</button>
+        <label for="idk">
+          <input type="radio" id="idk" name="tomatoOpinion" value="idk"> idk
+        </label>
+        <br>
+
+        <button type="submit">Submit</button>
       </form>
-<footer>
-  <p>© 2025 Tomato Gurlll Inc. 🍅 All rights reserved.</p>
-</footer>
+    </section>
+    <footer>
+      <p>© 2025 Tomato Gurlll Inc. 🍅 All rights reserved.</p>
+    </footer>
   </body>
 </html>
